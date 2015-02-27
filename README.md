@@ -23,7 +23,7 @@ import (
 )
 
 func main() {
-	c := hipchat.NewClient("<PUT YOUR AUTH TOKEN HERE>")
+	c := hipchat.Client{AuthToken: "<PUT YOUR AUTH TOKEN HERE>"}
 	req := hipchat.MessageRequest{
 		RoomId:        "Rat Man's Den",
 		From:          "GLaDOS",
